@@ -379,7 +379,7 @@ body{
     .navbar-container{
         display: block;
         position: relative;
-        height:64px;
+        height: 64px;
     }
     .navbar-container input[type='checkbox']{
         position: absolute;
@@ -389,7 +389,7 @@ body{
         top: 20px;
         left: 20px;
         z-index: 5;
-        opacity:0;
+        opacity: 0;
     }
     .navbar-container .hamburger-lines{
         display: block;
@@ -456,5 +456,41 @@ body{
     }
     .navbar-container input[type='checkbox']:checked ~ .hamburger-lines.line3{
         transform: rotate(-45deg);
+    }
+    /* ######################### food category########################## */
+    .food-container{
+        flex-direction: column;
+        align-items:stretch;
+    }
+    .food-type:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    .food-type{
+        box-shadow: 5px 5px 10px 0px #aaa;
+    }
+    .img-container{
+        margin:0;
+    }
+}
+
+/* ############################### small screen ############################### */
+@media(max-width:500px){
+    html{
+        font-size:50%;
+    }
+    .testinomial-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .food-menu-item{
+        flex-direction: column;
+        text-align:center;
+    }
+    .food-menu-container img{
+        margin:auto;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: ;
     }
 }
